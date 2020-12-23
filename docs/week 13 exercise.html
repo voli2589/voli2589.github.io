@@ -1,19 +1,32 @@
 <html>
 <head>
 <style>
-ul.1 {list-style-type: square;}
+ul.a {list-style-type: square;}
 
-ul.2 {
+ul.b {
   list-style: none; 
   padding: 0;
   margin: 0;
 }
-li.2::before {
+li.b::before {
   content: "•";
   padding-right: 8px;
   color: blue; 
 }
-ul.3 {list-style-image: url('marker.png');}
+ul.c {list-style-image: url('marker.png');}
+ul.d:hover{background-color: red;}
+table.e {border-collapse: collapse;}
+table.e, th.e, td.e { border: 1px solid red;}
+table.f { border-collapse: collapse; }
+tr.f { border: none; }
+td.f { border-right: solid 1px #f00; border-left: solid 1px #f00;}
+table.g, td.g, th.g { border: 1px solid #ddd;text-align: left;}
+table.g { border-collapse: collapse;width: 90%;margin:auto;}
+th.g, td.g { padding: 15px;}
+table.h {border-collapse: collapse;width: 100%;}
+th.h, td.h {text-align: left;padding: 8px;}
+tr:nth-child(even){background-color: lightgrey}
+th.h {background-color: #4CAF50;color: white;}
 
 
 
@@ -23,26 +36,90 @@ ul.3 {list-style-image: url('marker.png');}
 </head>
 <body>
 
-<ul class="1">
+<ul class="a">
   <li>Coffee</li>
   <li>Tea</li>
   <li>Coca Cola</li>
 </ul>
 <br/>
 
-<ul class="2">
-  <li class="2">Coffee</li>
-  <li class="2">Tea</li>
-  <li class="2">Coca Cola</li>
+<ul class="b">
+  <li class="b">Coffee</li>
+  <li class="b">Tea</li>
+  <li class="b">Coca Cola</li>
 </ul>
 <br/>
 
-<ul class="3">
+<ul class="c">
       <li>Circle type</li>
       <li>Tea</li>
       <li>Coca Cola</li>
 </ul>
 <br/>
+  
+<ul class="d">
+      <li>Circle type</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+</ul>
+<br/>
+  
+<table class="e">
+  <tr class="e">
+  <th class="e">Firstname</th>
+  <th class="e">Lastname</th>
+   </tr>
+  <tr class="e">
+   <td class="e">Peter</td>
+   <td class="e">Griffin</td>
+   </tr>
+</table>
+<hr/>
+  
+<table class="f">
+     <tr class="f">
+        <th class="f">Firstname</th>
+        <th class="f">Lastname</th>
+     </tr>
+     <tr class="f">
+        <td class="f">Peter</td>
+        <td class="f">Griffin</td>
+     </tr>
+</table>
+<hr/>
+  
+<table class="g">
+        <tr class="g">
+          <th class="g">Firstname</th>
+          <th class="g">Lastname</th>
+        </tr>
+        <tr class="g">
+          <td class="g">Peter</td>
+          <td class="g">Griffin</td>
+        </tr>
+</table> 
+<hr/>
+  
+<table class="h">
+        <tr class="h">
+          <th class="h">Firstname</th>
+          <th class="h">Lastname</th>
+        </tr>
+        <tr class="h">
+          <td class="h">Peter</td>
+          <td class="h">Griffin</td>
+        </tr>
+ </table> 
+ <hr/>
+  
+  
+  
+  
+  
+ 
+
+     
+  
 
 
 
