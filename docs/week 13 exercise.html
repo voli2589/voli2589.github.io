@@ -27,6 +27,14 @@ table.h {border-collapse: collapse;width: 100%;}
 th.h, td.h {text-align: left;padding: 8px;}
 tr:nth-child(even){background-color: lightgrey}
 th.h {background-color: #4CAF50;color: white;}
+table.i {border-collapse: collapse;width: 100%;}
+th.i, td.i {text-align: left;padding: 8px;}
+tr.i:nth-child(odd) {background-color: lightgreen;}
+tr.i:nth-child(even) {background-color: green;}
+table.j {border-collapse: collapse;width: 70%;margin:auto;}
+th.j, td.j {padding: 8px;text-align: left;border-bottom: 1px solid #ddd;}
+tr.j:hover {background-color:green;}
+table.k {empty-cells: hide;}
 
 
 
@@ -113,30 +121,49 @@ th.h {background-color: #4CAF50;color: white;}
  <hr/>
   
   
+ <table class="i">
+        <tr class="i">
+          <th class="i">Firstname</th>
+          <th class="i">Lastname</th>
+        </tr>
+        <tr class="i">
+          <td class="i">Peter</td>
+          <td class="i">Griffin</td>
+        </tr>
+ </table>
+ <hr/>
   
+ <table class="j">
+        <tr class="j">
+          <th class="j">First Name</th>
+          <th class="j">Last Name</th>
+          <th class="j">Points</th>
+        </tr>
+        <tr class="j">
+          <td class="j">Peter</td>
+          <td class="j">Griffin</td>
+          <td class="j">$100</td>
+        </tr>
+        <tr class="j">
+          <td class="j">Lois</td>
+          <td class="j">Griffin</td>
+          <td class="j">$150</td>
+        </tr>
+  </table>
+  <hr/>  
   
+ <table class="k" border="1">
+          <tr class="k">
+            <td class="k">Peter</td>
+            <td class="k">Griffin</td>
+          </tr>
+          <tr class="k">
+           <td class="k">Lois</td>
+           <td class="k"></td>
+          </tr>
+  </table>
   
- 
-
-     
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
+ </body>
 </html>
 
 
